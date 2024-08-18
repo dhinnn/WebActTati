@@ -1,0 +1,92 @@
+/* Style for the body to center content and set background color */
+body {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set height to full viewport height */
+    background-color: rgb(190, 196, 226); /* Background color */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Style for the pencil container */
+.pencil {
+    position: relative; /* Position relative for child positioning */
+    width: 15px; /* Set width of the pencil */
+    height: 220px; /* Set height of the pencil */
+    transition: transform 0.5s ease; /* Smooth transition for transformation */
+}
+
+/* Style for the pencil body */
+.pencil-body {
+    background: linear-gradient(to bottom, #f3d65b, #e1b74d); /* Gradient background */
+    width: 100%; /* Full width of the pencil container */
+    height: 100%; /* Full height of the pencil container */
+    border: 2px solid #a56e36; /* Border appearance */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Style for the pencil tip */
+.pencil-tip {
+    position: absolute; /* Absolute positioning for placement */
+    bottom: -49px; /* Position tip below the pencil body */
+    left: 0; /* Align to the left */
+    width: 20px; /* Set width of the tip */
+    height: 45px; /* Set height of the tip */
+    background: linear-gradient(to bottom, #b4937a, #754c3a); /* Gradient for tip color */
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%); /* Triangle shape */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.20); /* Shadow effect */
+}
+
+/* Style for the pencil eraser */
+.pencil-eraser {
+    position: absolute; /* Absolute positioning for placement */
+    top: 0; /* Align to the top of the pencil */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the pencil */
+    height: 20px; /* Height of the eraser */
+    background-color: #ff4f4f; /* Eraser background color */
+    border-radius: 5px 5px 0 0; /* Rounded top corners for the eraser */
+    border: 2px solid #d61e1e; /* Border appearance for the eraser */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Style for buttons */
+button {
+    background-color: #437d45; /* Button background color */
+    border: none; /* No border */
+    color: white; /* Text color */
+    padding: 15px 32px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block layout */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around button */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+    position: fixed; /* Fixed position on screen */
+    bottom: 20px; /* Position from the bottom */
+    left: 50px; /* Position from the left */
+}
+
+/* Style for button hover effects */
+button:hover {
+    background-color: #45a049; /* Change background on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+.pencil-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #121212; /* Text color */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 14px; /* Adjust font size as needed */
+    transform: rotate(-45deg); /* Rotate the text */
+    bottom: 110px; /* Adjust this value to move the text up/down */
+    left: 50%; /* Center the text */
+    transform: translateX(-50%) rotate(-90deg); /* Centering and rotating */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+
